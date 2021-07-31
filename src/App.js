@@ -5,11 +5,15 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">Dictionary ReactJS Application</header>
-      
-      
+
       <Dictionary />
-      
-      <footer>Coded by Sharon Chawanji</footer>
+
+      <footer>
+        {" "}
+        Hosted on{" "}
+        <a href="https://schawanji-dictionaryapp.netlify.app/"> Netlify</a>{" "}
+        Coded by Sharon Chawanji
+      </footer>
     </div>
   );
 }
