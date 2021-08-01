@@ -1,16 +1,21 @@
+import "./Results.css";
+
 export default function Results(props) {
   if (props.results) {
     console.log(props);
     return (
       <div>
-        <div>{props.results.word} </div>
+        <h1>{props.results.word} </h1>
         {props.results.meanings.map(function (definition, index) {
-          console.log(definition.definitions[0].definition);
-          return <div key={index}>{definition.definitions[0].definition}</div>;
+          return (
+            <ul>
+              <li key={index}>{definition.definitions[0].definition}</li>
+            </ul>
+          );
         })}
       </div>
     );
   } else {
-    return "No results yet";
+    return "";
   }
 }
