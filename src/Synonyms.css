@@ -1,4 +1,5 @@
 .Synonym li {
   list-style: none;
-  
+  color: blue;
+  display:inline-block; 
 }
