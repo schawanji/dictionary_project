@@ -4,14 +4,16 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">Dictionary ReactJS Application</header>
+      <header>Look up a word</header>
 
       <Dictionary />
-      
 
       <footer>
         {" "}
-        Hosted on{" "}
+        <a href="https://github.com/schawanji/dictionary_project">
+          Open-source project{" "}
+        </a>{" "}
+        hosted on{" "}
         <a href="https://schawanji-dictionaryapp.netlify.app/"> Netlify</a>{" "}
         Coded by Sharon Chawanji
       </footer>

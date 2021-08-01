@@ -5,9 +5,12 @@ max-width: 650px;
   line-height: 34px;
   margin: 0 auto;
 }
+form{font-size: 45px;}
 
 footer {
   font-size: 12px;
 }
+header{font-size: 45px;
+  padding:  10px 10px ;}
 
 h1{text-transform: capitalize;}
