@@ -7,6 +7,7 @@ function App() {
       <header className="App-header">Dictionary ReactJS Application</header>
 
       <Dictionary />
+      
 
       <footer>
         {" "}
