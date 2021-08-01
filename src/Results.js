@@ -6,10 +6,21 @@ export default function Results(props) {
     return (
       <div className="Results">
         <h1>{props.results.word} </h1>
+        {props.results.phonetics.map(function (phonetic, index) {
+          return (
+            <div key={index}>
+              <a href={phonetic.audio} target="_blank" rel="noreferrer">
+                {" "}
+                listen
+              </a>
+              <div>{phonetic.text}</div>
+            </div>
+          );
+        })}
         {props.results.meanings.map(function (definition, index) {
           return (
             <ul key={index}>
-              <li >
+              <li>
                 {" "}
                 <h3>{definition.partOfSpeech}</h3>{" "}
                 {definition.definitions[0].definition}{" "}
