@@ -9,13 +9,13 @@ function App() {
 
       <footer>
         {" "}
-        <a href="https://github.com/schawanji/dictionary_project">
+        <a href="https://github.com/schawanji/dictionary_project" target="_blank" rel="noreferrer">
           Open-source project{" "}
         </a>{" "}
         hosted on{" "}
-        <a href="https://schawanji-dictionaryapp.netlify.app/"> Netlify</a>{" "}
+        <a href="https://schawanji-dictionaryapp.netlify.app/" target="_blank" rel="noreferrer"> Netlify</a>{" "}
         Coded by{" "}
-        <a href="https://www.linkedin.com/in/schawanji/">Sharon Chawanji</a>
+        <a href="https://www.linkedin.com/in/schawanji/" target="_blank" rel="noreferrer">Sharon Chawanji</a>
       </footer>
     </div>
   );
