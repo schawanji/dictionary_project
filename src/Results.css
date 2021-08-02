@@ -11,7 +11,7 @@
 }
 
 .Results em {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 15px;
   color: #666;
 }
@@ -31,13 +31,12 @@
 }
 
 .Phonetics {
-  margin: 20px 0 0;
+  margin: 30px 0 0;
 }
 
 .Phonetics h2 {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    color: #666;
-    display: inline;}
-
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 19px;
+  color: #666;
+}

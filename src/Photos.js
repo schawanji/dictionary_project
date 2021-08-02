@@ -4,16 +4,14 @@ export default function Photos(props) {
   if (props.photos) {
     return (
       <section>
-        <div className="container">
-          <div className="row">
-            {props.photos.map(function (photo, index) {
-              return (
-                <div className="col-4" key={index}>
-                  <img src={photo.src.tiny} alt="" className="img-fluid" />
-                </div>
-              );
-            })}
-          </div>
+        <div className="row">
+          {props.photos.map(function (photo, index) {
+            return (
+              <div className="col-4" key={index}>
+                <img src={photo.src.tiny} alt="" className="img-fluid" />
+              </div>
+            );
+          })}
         </div>
       </section>
     );

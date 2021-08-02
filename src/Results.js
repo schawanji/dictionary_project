@@ -1,5 +1,6 @@
 import "./Results.css";
 import Synonym from "./Synonyms";
+import Audio from "./Audio";
 
 export default function Results(props) {
   if (props.results) {
@@ -9,14 +10,13 @@ export default function Results(props) {
           <h1>{props.results.word} </h1>
           {props.results.phonetics.map(function (phonetic, index) {
             return (
-              <div className="Phonetics" key={index} >
-                <span >
-                  <a href={phonetic.audio} target="_blank" rel="noreferrer">
-                    {" "}
-                    listen
-                  </a>
+              <div className="Phonetics row " key={index}>
+                <div className="col-1">
                   <h2>{phonetic.text}</h2>
-                </span>
+                </div>
+                <div className="col-11">
+                  <Audio audio={phonetic.audio} />
+                </div>
               </div>
             );
           })}
