@@ -14,7 +14,7 @@ export default function Results(props) {
                   {" "}
                   listen
                 </a>
-                <span>{phonetic.text}</span>
+                <h2>{phonetic.text}</h2>
               </span>
             );
           })}
