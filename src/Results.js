@@ -9,13 +9,15 @@ export default function Results(props) {
           <h1>{props.results.word} </h1>
           {props.results.phonetics.map(function (phonetic, index) {
             return (
-              <span key={index} className="Phonetics">
-                <a href={phonetic.audio} target="_blank" rel="noreferrer">
-                  {" "}
-                  listen
-                </a>
-                <h2>{phonetic.text}</h2>
-              </span>
+              <div className="Phonetics" key={index} >
+                <span >
+                  <a href={phonetic.audio} target="_blank" rel="noreferrer">
+                    {" "}
+                    listen
+                  </a>
+                  <h2>{phonetic.text}</h2>
+                </span>
+              </div>
             );
           })}
         </section>
@@ -26,7 +28,7 @@ export default function Results(props) {
               {" "}
               <h3>{definition.partOfSpeech}</h3>
               <p>{definition.definitions[0].definition}</p>
-              <em> Example: {definition.definitions[0].example}</em>
+              <em> "{definition.definitions[0].example}"</em>
               <Synonym synonym={definition.definitions[0].synonyms} />
             </section>
           );
