@@ -29,10 +29,15 @@ export default function Dictionary() {
   if (response) {
     return (
       <div className="Dictionary">
-        <form onSubmit={handleSubmit}>
-          <input type="search" placeholder="Love" onChange={updateKeyword} />
-          <input type="submit" value="search" />
-        </form>
+        <section>
+          <form onSubmit={handleSubmit}>
+            <label>Look up a word</label>
+            <input type="search" placeholder="Love" onChange={updateKeyword} />
+            <input type="submit" value="search" />
+          </form>
+          <small className="hint">e.g sunset, fire, map, environment</small>
+        </section>
+
         <Results results={results} />
       </div>
     );

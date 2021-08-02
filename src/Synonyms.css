@@ -1,5 +1,6 @@
 .Synonym li {
-  list-style: none;
-  color: blue;
-  display:inline-block; 
+  list-style:square;
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 14px;
 }

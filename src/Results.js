@@ -5,18 +5,21 @@ export default function Results(props) {
   if (props.results) {
     return (
       <div className="Results">
-        <h1>{props.results.word} </h1>
-        {props.results.phonetics.map(function (phonetic, index) {
-          return (
-            <div key={index}>
-              <a href={phonetic.audio} target="_blank" rel="noreferrer">
-                {" "}
-                listen
-              </a>
-              <div>{phonetic.text}</div>
-            </div>
-          );
-        })}
+        <section>
+          <h1>{props.results.word} </h1>
+          {props.results.phonetics.map(function (phonetic, index) {
+            return (
+              <span key={index}>
+                <a href={phonetic.audio} target="_blank" rel="noreferrer">
+                  {" "}
+                  listen
+                </a>
+                <span>{phonetic.text}</span>
+              </span>
+            );
+          })}
+        </section>
+
         {props.results.meanings.map(function (definition, index) {
           return (
             <section key={index}>
