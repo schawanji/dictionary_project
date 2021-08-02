@@ -11,12 +11,7 @@ export default function Photos(props) {
                 {" "}
                 <a href={photo.src.original}>
                   {" "}
-                  <img
-                    src={photo.src.tiny}
-                    alt={photo.photographer}
-                    target="_blank"
-                    rel="noreferrer"
-                  />
+                  <img src={photo.src.tiny} alt={photo.photographer} />
                 </a>
               </div>
             );
