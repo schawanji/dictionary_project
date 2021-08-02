@@ -21,3 +21,11 @@
     color: #000;
     margin: 20px 0 10px;
 }
+
+.Results h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000;
+}
