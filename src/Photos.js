@@ -8,7 +8,15 @@ export default function Photos(props) {
           {props.photos.map(function (photo, index) {
             return (
               <div className="col-4" key={index}>
-                <img src={photo.src.tiny} alt="" className="img-fluid" />
+                {" "}
+                <a href={photo.src.original}>
+                  {" "}
+                  <img
+                    src={photo.src.tiny}
+                    alt={photo.photographer}
+                    className="img-fluid"
+                  />
+                </a>
               </div>
             );
           })}
