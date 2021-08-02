@@ -9,7 +9,7 @@ export default function Results(props) {
           <h1>{props.results.word} </h1>
           {props.results.phonetics.map(function (phonetic, index) {
             return (
-              <span key={index}>
+              <span key={index} className="Phonetics">
                 <a href={phonetic.audio} target="_blank" rel="noreferrer">
                   {" "}
                   listen

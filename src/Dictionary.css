@@ -29,3 +29,7 @@ form {
   border-radius: 6px;
   width: 100%;
 }
+.Dictionary .hint {
+  margin-top: 15px;
+  display: block;
+}
