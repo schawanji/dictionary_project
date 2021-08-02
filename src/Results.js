@@ -11,10 +11,10 @@ export default function Results(props) {
           {props.results.phonetics.map(function (phonetic, index) {
             return (
               <div className="Phonetics row " key={index}>
-                <div className="col-1">
+                <div className="col-12 Phonetics ">
                   <h2>{phonetic.text}</h2>
                 </div>
-                <div className="col-11">
+                <div className="col-12 Phonetics ">
                   <Audio audio={phonetic.audio} />
                 </div>
               </div>
