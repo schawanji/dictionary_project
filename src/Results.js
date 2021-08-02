@@ -24,10 +24,10 @@ export default function Results(props) {
           return (
             <section key={index}>
               {" "}
-              <h3>{definition.partOfSpeech}</h3>{" "}
-              {definition.definitions[0].definition}{" "}
-              <div> Example: {definition.definitions[0].example}</div>{" "}
-              <Synonym synonym={definition.definitions[0].synonyms} />{" "}
+              <h3>{definition.partOfSpeech}</h3>
+              <p>{definition.definitions[0].definition}</p>
+              <em> Example: {definition.definitions[0].example}</em>
+              <Synonym synonym={definition.definitions[0].synonyms} />
             </section>
           );
         })}

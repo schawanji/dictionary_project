@@ -33,7 +33,6 @@ export default function Dictionary() {
           <form onSubmit={handleSubmit}>
             <label>Look up a word</label>
             <input type="search" placeholder="Love" onChange={updateKeyword} />
-            <input type="submit" value="search" />
           </form>
           <small className="hint">e.g sunset, fire, map, environment</small>
         </section>

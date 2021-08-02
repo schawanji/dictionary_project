@@ -14,14 +14,6 @@ section {
   border-radius: 5px;
   margin: 10px auto;
 }
-li {
-  display: inline-block;
-}
-
-input {
-  font-size: 24px;
-  padding: 5px 5px;
-}
 
 footer {
   font-size: 12px;
@@ -31,5 +23,4 @@ h1 {
   text-transform: capitalize;
   font-size: 34px;
 }
-
-
+a{color: #000;text-decoration: none;}

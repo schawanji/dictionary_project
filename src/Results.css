@@ -1,4 +1,4 @@
-a {
+.Results a {
     color: #6c63ff;
     font-weight: 400;
     margin-right: 15px;
@@ -8,4 +8,16 @@ a {
     border: 1px solid #ddd;
     border-radius: 50px;
     text-decoration: none;
+}
+
+.Results em {
+    font-size: 13px;
+    line-height: 15px;
+    color: #666;
+}
+.Results p {
+    font-size: 14px;
+    line-height: 17px;
+    color: #000;
+    margin: 20px 0 10px;
 }
